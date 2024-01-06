@@ -1,0 +1,11 @@
+<div class="card horizontal" (click)="pokemonClick.emit(data)" appBorderCard>
+  <div class="card-image">
+    <img [src]="data.picture" alt="image pokemon"/>
+  </div>
+  <div class="card-stacked">
+    <div class="card-content">
+      <p>{{data.name}}</p>
+      <p><small>{{ data.created }}</small></p>
+    </div>
+  </div>
+</div>

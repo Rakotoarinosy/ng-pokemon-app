@@ -12,11 +12,12 @@ export class BorderCardDirective {
   }
 
   @HostListener('mouseenter') onMouseEnter() {
-    console.log('color');
+    console.log('mouseenter');
     this.setBorder('#009688');
   }
 
   @HostListener('mouseleave') onMouseLeave() {
+    console.log('mouseleave');
     this.setBorder('#f5f5f5');
   }
 
@@ -27,5 +28,6 @@ export class BorderCardDirective {
   private setBorder(color: string) {
     let border = `solid 4px ${color}`
     this.el.nativeElement.style.border = border;
+    console.log(this.el.nativeElement);
   }
 }

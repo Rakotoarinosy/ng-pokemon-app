@@ -3,11 +3,12 @@ import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 import { POKEMONS } from './mock-pokemon-list';
 import { Pokemon } from './pokemon';
+import { PokemonCardComponent } from './pokemon-card/pokemon-card.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet],
+  imports: [CommonModule, RouterOutlet,PokemonCardComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
