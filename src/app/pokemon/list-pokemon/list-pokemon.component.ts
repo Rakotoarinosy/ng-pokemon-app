@@ -10,8 +10,7 @@ import { BorderCardDirective } from '../border-card.directive';
     selector: 'app-list-pokemon',
     standalone: false,
     templateUrl: './list-pokemon.component.html',
-    styleUrls: ['./list-pokemon.component.css'],
-    imports: [CommonModule, PokemonTypeColorPipe,BorderCardDirective]
+    styleUrls: ['./list-pokemon.component.css']
 })
 export class ListPokemonComponent {
   pokemonList: Pokemon[] = POKEMONS;
