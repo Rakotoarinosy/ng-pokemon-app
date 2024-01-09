@@ -8,7 +8,7 @@ import { BorderCardDirective } from '../border-card.directive';
 
 @Component({
     selector: 'app-list-pokemon',
-    standalone: true,
+    standalone: false,
     templateUrl: './list-pokemon.component.html',
     styleUrls: ['./list-pokemon.component.css'],
     imports: [CommonModule, PokemonTypeColorPipe,BorderCardDirective]

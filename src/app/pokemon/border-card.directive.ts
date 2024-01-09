@@ -2,7 +2,7 @@ import { Directive, ElementRef, HostListener, Input } from '@angular/core';
 
 @Directive({
   selector: '[appBorderCard]',
-  standalone: true
+  standalone: false
 })
 export class BorderCardDirective {
 

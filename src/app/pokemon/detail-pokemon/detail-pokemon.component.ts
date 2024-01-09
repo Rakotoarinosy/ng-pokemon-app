@@ -7,7 +7,7 @@ import { PokemonTypeColorPipe } from '../pokemon-type-color.pipe';
 
 @Component({
   selector: 'app-detail-pokemon',
-  standalone: true,
+  standalone: false,
   imports: [CommonModule,PokemonTypeColorPipe],
   templateUrl: './detail-pokemon.component.html',
   styleUrl: './detail-pokemon.component.css'
