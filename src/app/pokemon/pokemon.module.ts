@@ -8,8 +8,19 @@ import { RouterModule, Routes } from '@angular/router';
 
 
 export const pokemonRoutes: Routes = [
-  {path: 'pokemons', component: ListPokemonComponent},
-  {path: 'pokemon/:id', component: DetailPokemonComponent}
+  {
+    path: '',
+    children: [
+      {
+        path: '',
+        component: ListPokemonComponent,
+      },
+      {
+        path: ':id',
+        component: DetailPokemonComponent,
+      }
+    ]
+  }
 ];
 
 @NgModule({
