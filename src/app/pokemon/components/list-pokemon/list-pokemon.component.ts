@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { POKEMONS } from '../mock-pokemon-list';
-import { Pokemon } from '../pokemon';
+import { POKEMONS } from '../../mocks/mock-pokemon-list';
+import { Pokemon } from '../../entities/pokemon.entity';
 import { Router } from '@angular/router';
-import { PokemonTypeColorPipe } from '../pokemon-type-color.pipe';
-import { BorderCardDirective } from '../border-card.directive';
+import { PokemonTypeColorPipe } from '../../pipes/pokemon-type-color.pipe';
+import { BorderCardDirective } from '../../directives/border-card.directive';
 
 @Component({
     selector: 'app-list-pokemon',
