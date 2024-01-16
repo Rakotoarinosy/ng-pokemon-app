@@ -3,6 +3,6 @@ import { PageNotFoundComponent } from './shared/components/page-not-found/page-n
 
 export const routes: Routes = [
   {path: '', redirectTo: 'pokemons', pathMatch: 'full'},
-  {path: 'pokemons', loadChildren: () => import('./pokemon/pokemon.module').then(module => module.PokemonModule)},
+  {path: '', loadChildren: () => import('./pokemon/pokemon.routes').then(module => module.pokemonRoutes)},
   {path: '**', component: PageNotFoundComponent },
 ];
