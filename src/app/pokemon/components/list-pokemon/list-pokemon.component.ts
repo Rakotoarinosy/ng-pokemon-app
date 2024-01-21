@@ -12,7 +12,8 @@ import { PokemonService } from '../../services/pokemon.service';
     standalone: true,
     templateUrl: './list-pokemon.component.html',
     styleUrls: ['./list-pokemon.component.css'],
-    imports: [PokemonTypeColorPipe,BorderCardDirective, CommonModule]
+    imports: [PokemonTypeColorPipe,BorderCardDirective, CommonModule],
+    providers : [PokemonService]
 })
 export class ListPokemonComponent implements OnInit{
   pokemonList: Pokemon[];

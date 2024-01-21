@@ -10,14 +10,13 @@ import { PokemonService } from '../../services/pokemon.service';
   standalone: true,
   templateUrl: './detail-pokemon.component.html',
   styleUrl: './detail-pokemon.component.css',
-  imports: [CommonModule,PokemonTypeColorPipe]
+  imports: [CommonModule,PokemonTypeColorPipe],
+  providers : [PokemonService]
 })
 export class DetailPokemonComponent implements OnInit{
 
   pokemonList: Pokemon[];
   pokemon: Pokemon|undefined;
-
-  @Input() routerlink:string| any[];
 
   constructor(
     private route: ActivatedRoute,
@@ -35,4 +34,5 @@ export class DetailPokemonComponent implements OnInit{
   goToPokemonList() {
     this.router.navigate(['/pokemons']);
   }
+
 }
