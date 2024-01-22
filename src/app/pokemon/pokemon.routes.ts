@@ -9,9 +9,14 @@ export const pokemonRoutes: Routes = [
         loadComponent: () => import('./components/list-pokemon/list-pokemon.component').then(module => module.ListPokemonComponent),
       },
       {
-        path: 'pokemons/:id',
+        path: 'pokemon/:id',
         loadComponent: () => import('./components/detail-pokemon/detail-pokemon.component').then(module => module.DetailPokemonComponent),
-      }
+      },
+      {
+        path: 'edit/pokemon/:id',
+        loadComponent: () => import('./components/edit-pokemon/edit-pokemon.component').then(module => module.EditPokemonComponent),
+      },
+
     ]
   }
 ];
